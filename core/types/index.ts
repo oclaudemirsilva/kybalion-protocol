@@ -62,7 +62,7 @@ export interface DimensionScore {
   /**
    * Which modules/APIs/methods produced this score.
    * Used for auditability — traces the score back to its source.
-   * Example: ['services/modelagem/v58', 'gemini-vision']
+   * Example: ['adapters/video-fidelity', 'gemini-vision']
    */
   source: string[];
 

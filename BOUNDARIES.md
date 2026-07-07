@@ -4,7 +4,7 @@
 > 
 > Este documento registra os limites de escopo do Kybalion Protocol descobertos
 > através de testes de estresse conceituais (Física, Biologia Evolutiva, Dadaísmo).
-> Ele serve para evitar desvios metodológicos nas próximas sessões de desenvolvimento.
+> Ele serve para evitar desvios metodológicos ao aplicar ou estender o protocolo.
 
 ---
 
@@ -246,11 +246,11 @@ A Árvore da Vida descreve a dinâmica de criação sob duas vias complementares
 
 ---
 
-## 4. Guia para Próximas Sessões (Roadmap do Contexto)
+## 4. Guia de Aplicação
 
-Ao reiniciar as discussões sobre o Kybalion Protocol, lembre-se:
+Ao aplicar o Kybalion Protocol, lembre-se:
 
 1. **DX First:** Nunca force a escrita de adapters complexos. Respeite a **Regra de Parcimônia (10%)** documentada em `WHY.md`.
 2. **Sem Score Único:** O radar visual é inegociável. A média destrói o diagnóstico de gaps. Use o **Coeficiente de Simetria ($\eta$)** de `SPEC.md` para avaliar o equilíbrio.
 3. **Maturidade Saudável:** A maturidade máxima (`complete`) não é um score alto, mas a ausência de gaps e o fechamento do loop de Rastreabilidade.
-4. **Dogfooding:** O primeiro passo prático de código deve ser no FrameOracle, conectando `inspectTimeline.ts` (Equilíbrio) e `fidelity v58` (Fidelidade) a um evaluator básico.
+4. **Dogfooding:** Comece conectando as métricas que seu produto JÁ tem (um linter estrutural, um medidor de fidelidade) a um evaluator básico antes de construir métricas novas.

@@ -70,7 +70,7 @@ export interface DimensionScore {
   /**
    * Which modules/APIs/methods produced this score.
    * Used for auditability — traces the score back to its source.
-   * Example: ['services/modelagem/v58', 'gemini-vision']
+   * Example: ['adapters/video-fidelity', 'gemini-vision']
    */
   source: string[];
 
@@ -214,7 +214,7 @@ export interface EvalContext {
   // ── Structural quality ────────────────────────────────────
   /**
    * Technical issues detected (for the Balance dimension structural pole).
-   * Compatible with inspectTimeline output format.
+   * Compatible with common timeline-inspector/linter output formats.
    */
   structural_issues?: Array<{
     id: string;

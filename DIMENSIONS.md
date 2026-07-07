@@ -91,8 +91,8 @@ fidelity_score = weighted_average([
 ])
 ```
 
-**Para kinetic text (FrameOracle):**
-- Medidor v58: `fidelity_score = mean(per_clip_fidelity_scores)`
+**Para kinetic text (vídeo):**
+- Medidor frame-a-frame: `fidelity_score = mean(per_clip_fidelity_scores)`
 
 **Para features de software:**
 1. Comparar spec declarada (docstring, ADR) com comportamento observado (testes)
@@ -305,7 +305,7 @@ balance_score = weighted_average([
 diferenciador de longo prazo entre produtos que ficam e que são esquecidos.
 
 **Para conteúdo de vídeo:**
-- `structural_score` = ausência de issues técnicos (inspectTimeline ou equivalente)
+- `structural_score` = ausência de issues técnicos (linter/inspetor de timeline ou equivalente)
 - `emotional_score` = LLM: *"Este conteúdo evoca uma emoção primária clara? Qual? Score 0-100."*
 
 **Para software:**

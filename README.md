@@ -193,7 +193,7 @@ The same 7 dimensions apply across domains:
 
 | Domain | Adapter |
 |--------|---------|
-| 🎬 Video editors | FrameOracle — reference implementation (roadmap, Phase 4) |
+| 🎬 Video editors | FrameOracle — reference implementation (in progress) |
 | 🛒 E-commerce | Product listing: description ↔ photos ↔ conversion |
 | 🎙️ Podcasts | Episode arc, voice energy, narrative flow |
 | 🖥️ SaaS products | Feature adoption, onboarding, analytics loop |
@@ -217,7 +217,7 @@ kybalion-protocol/
 │   ├── types/              ← KybalionReport, DimensionScore, EvalContext
 │   └── evaluator/          ← KybalionEvaluator (Mode 3)
 ├── adapters/
-│   ├── frameoracle/        ← reference implementation (planned — Phase 4)
+│   ├── frameoracle/        ← reference implementation (planned)
 │   └── _template/          ← starter template
 └── examples/
     ├── quick-check.md      ← Mode 1 walkthrough
@@ -231,18 +231,23 @@ kybalion-protocol/
 
 **FrameOracle** is where the protocol was born and proven. Its adapters live
 in the FrameOracle codebase and consume this package as a dependency — the
-core never imports anything from FrameOracle (see roadmap, Phase 4).
+core never imports anything from FrameOracle.
 
 ---
 
-## Roadmap
+## Status
 
-- [x] **Phase 1 — Documentation**: 7 dimensions, manifesto, WHY, maturity model
-- [x] **Phase 2 — Specification**: formal `KybalionReport` type + SPEC.md
-- [x] **Phase 3 — Core**: `KybalionEvaluator` + Mode 1/2 quick-start tools
-- [ ] **Phase 4 — FrameOracle adapter**: reference implementation extracted as adapter
-- [ ] **Phase 5 — Public release**: `npm install kybalion-protocol` + PyPI + docs site
-- [ ] **Phase 6 — No-code tools**: web radar app, Notion & Google Sheets templates
+**Available today:** the full protocol documentation, the formal spec
+([SPEC.md](./SPEC.md)) and the TypeScript core (types, `buildReport`,
+`KybalionEvaluator`, quick check) with tests and CI. Modes 1 and 2 need
+no code at all; Mode 3 installs directly from this repository:
+
+```bash
+npm install github:oclaudemirsilva/kybalion-protocol
+```
+
+**Planned:** npm & PyPI packages, a docs site, no-code tools
+(web radar app, Notion / Google Sheets templates) and reference adapters.
 
 ---
 
