@@ -86,17 +86,6 @@ To simplify high-level reporting, the 7 dimensions are grouped into **Three Pill
 
 ---
 
-## No-Code & Visual Tools
-
-You do not need to be a developer to use the Kybalion Protocol in your projects. The repository provides out-of-the-box tools for creators, product managers, and designers:
-
-*   **Interactive Web App (GitHub Pages):** Drag sliders, click checklists, and generate your custom radar chart SVG and PDF reports directly in your browser. (Link: `https://kybalion-protocol.github.io`).
-*   **Notion Template:** Duplicate the official workspace to track features, log scores, and automatically calculate maturity and symmetry coefficients inside your Notion database.
-*   **Google Sheets Template:** Copy the pre-built spreadsheet with native radar charts and automatic formulas to run manual team evaluations.
-*   **Markdown Templates:** Find copy-pasteable templates for quick-checks and manual reviews inside the `/templates` folder.
-
----
-
 ## Three modes of use
 
 The protocol meets you where you are. Start with Mode 1 — upgrade only if you need to.
@@ -204,7 +193,7 @@ The same 7 dimensions apply across domains:
 
 | Domain | Adapter |
 |--------|---------|
-| 🎬 Video editors | [FrameOracle adapter](./adapters/frameoracle/) — reference implementation |
+| 🎬 Video editors | FrameOracle — reference implementation (roadmap, Phase 4) |
 | 🛒 E-commerce | Product listing: description ↔ photos ↔ conversion |
 | 🎙️ Podcasts | Episode arc, voice energy, narrative flow |
 | 🖥️ SaaS products | Feature adoption, onboarding, analytics loop |
@@ -228,7 +217,7 @@ kybalion-protocol/
 │   ├── types/              ← KybalionReport, DimensionScore, EvalContext
 │   └── evaluator/          ← KybalionEvaluator (Mode 3)
 ├── adapters/
-│   ├── frameoracle/        ← reference implementation (video editor AI)
+│   ├── frameoracle/        ← reference implementation (planned — Phase 4)
 │   └── _template/          ← starter template
 └── examples/
     ├── quick-check.md      ← Mode 1 walkthrough
@@ -253,6 +242,7 @@ core never imports anything from FrameOracle (see roadmap, Phase 4).
 - [x] **Phase 3 — Core**: `KybalionEvaluator` + Mode 1/2 quick-start tools
 - [ ] **Phase 4 — FrameOracle adapter**: reference implementation extracted as adapter
 - [ ] **Phase 5 — Public release**: `npm install kybalion-protocol` + PyPI + docs site
+- [ ] **Phase 6 — No-code tools**: web radar app, Notion & Google Sheets templates
 
 ---
 
