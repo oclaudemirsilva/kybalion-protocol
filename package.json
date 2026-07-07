@@ -1,0 +1,43 @@
+{
+  "name": "kybalion-protocol",
+  "version": "0.1.0",
+  "description": "A 7-dimension evaluation protocol for Intentional Systems. The radar is the output, not a score.",
+  "license": "MIT",
+  "author": "Claudemir Silva (https://github.com/oclaudemirsilva)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oclaudemirsilva/kybalion-protocol.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "*.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "evaluation",
+    "protocol",
+    "radar",
+    "quality",
+    "kybalion",
+    "hermetic"
+  ],
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^3.0.0"
+  }
+}
